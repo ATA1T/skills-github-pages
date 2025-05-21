@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Southern Morocco's Cultural Heritage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1519608423382-2a5b5a33f2c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="font-sans">
+  <!-- Navigation -->
+  <nav class="bg-amber-800 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Southern Morocco Heritage</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-amber-300">Home</a></li>
+        <li><a href="#heritage" class="hover:text-amber-300">Heritage Sites</a></li>
+        <li><a href="#culture" class="hover:text-amber-300">Culture</a></li>
+        <li><a href="#tours" class="hover:text-amber-300">Tours</a></li>
+        <li><a href="#contact" class="hover:text-amber-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg h-screen flex items-center justify-center text-white">
+    <div class="text-center bg-black bg-opacity-50 p-8 rounded">
+      <h2 class="text-4xl font-bold mb-4">Discover the Soul of Southern Morocco</h2>
+      <p class="text-lg mb-6">Explore the rich cultural heritage of kasbahs, deserts, and ancient traditions.</p>
+      <a href="#heritage" class="bg-amber-600 text-white px-6 py-3 rounded hover:bg-amber-700">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Heritage Sites Section -->
+  <section id="heritage" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">UNESCO World Heritage Sites</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1596556656851-1e31f26b984f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ksar of Ait-Ben-Haddou" class="w-full h-48 object-cover rounded">
+          <h3 class="text-xl font-semibold mt-4">Ksar of Ait-Ben-Haddou</h3>
+          <p>A stunning example of southern Moroccan architecture, this fortified village is a UNESCO site since 1987.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1596556656851-1e31f26b984f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Medina of Essaouira" class="w-full h-48 object-cover rounded">
+          <h3 class="text-xl font-semibold mt-4">Medina of Essaouira</h3>
+          <p>A historic coastal town with vibrant markets and a unique blend of cultures, recognized by UNESCO in 2001.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1596556656851-1e31f26b984f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Drâa Valley" class="w-full h-48 object-cover rounded">
+          <h3 class="text-xl font-semibold mt-4">Drâa Valley</h3>
+          <p>Ancient caravan routes and lush oases define this region’s unique Sub-Saharan and Amazigh heritage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-amber-800 text-white p-4 text-center">
+    <p>&copy; 2025 Southern Morocco Heritage. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
